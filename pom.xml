@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.tongtu</groupId>
+		<artifactId>ahtt</artifactId>
+		<version>4.0.0</version>
+	</parent>
+
+	<artifactId>jts</artifactId>
+	<packaging>pom</packaging>
+
+	<!--项目子模块-->
+	<modules>
+		<module>jts-module</module>
+		<module>jts-postgis-jdbc</module>
+		<module>jts-handler</module>
+	</modules>
+	<distributionManagement>
+		<repository>
+			<id>ncglReleases</id>
+			<url>http://maven.ncgl.cn/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
+	<repositories>
+		<!--阿里云代理-->
+		<repository>
+			<id>aliyun</id>
+			<name>aliyun</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>ncglPublic</id>
+			<name>Nexus Repository</name>
+			<url>http://maven.ncgl.cn/repository/maven-public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>ncglReleases</id>
+			<name>Nexus releases</name>
+			<url>http://maven.ncgl.cn/repository/maven-releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
